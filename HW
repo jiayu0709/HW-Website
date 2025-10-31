@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>康家瑀 — 個人頁面</title>
+  <meta name="description" content="康家瑀 — 高雄科技大學資訊管理系大四生的個人介紹與高科校園介紹。" />
+  <style>
+    :root{--accent:#0066cc;--muted:#6b7280;--bg:#f7fbff}
+    *{box-sizing:border-box}
+    body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;margin:0;background:var(--bg);color:#111}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:128px;height:128px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#00a3ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    nav{margin-left:auto}
+    nav a{color:var(--accent);text-decoration:none;margin-left:14px;font-weight:600}
+
+    .card{background:white;border-radius:14px;padding:20px;margin-top:22px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+
+    .section-title{display:flex;align-items:baseline;gap:12px}
+    .section-title h2{margin:0;font-size:18px}
+    .badge{background:var(--accent);color:white;padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .info-list{list-style:none;padding:0;margin:12px 0 0 0}
+    .info-list li{padding:8px 0;border-bottom:1px dashed #eee;color:var(--muted)}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* simple smooth scroll link style */
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0088ff);color:#fff;text-decoration:none;font-weight:600}
+
+    /* campus intro styles */
+    .campus-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media (max-width:880px){.campus-tiles{grid-template-columns:repeat(1,1fr)}}
+    .tile{background:linear-gradient(180deg,#ffffff,#f2fbff);padding:14px;border-radius:12px;min-height:100px}
+    .tile h3{margin:0 0 8px 0}
+    .tile p{margin:0;color:var(--muted);line-height:1.5}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .pill{background:#eef7ff;padding:6px 10px;border-radius:999px;color:var(--accent);font-weight:600;font-size:13px}
+
+    .quote{font-style:italic;color:var(--muted);margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">康家瑀</div>
+      <div>
+        <h1>康家瑀 — 高雄科技大學（第一校區） 資訊管理系 大四生</h1>
+        <div class="subtitle">熱衷資料分析、Web 開發與校園生活分享 · Kaohsiung University of Science and Technology</div>
+      </div>
+      <nav>
+        <a href="#about">關於我</a>
+        <a href="#campus">高科校園介紹</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card">
+          <div class="section-title">
+            <h2>關於我</h2>
+            <span class="badge">資訊管理系 · 大四</span>
+          </div>
+          <p class="quote">嗨，我是康家瑀，目前就讀高雄科技大學第一校區資訊管理系大四。大學期間我學習資料結構、資料庫、網頁前後端開發，並參與過校內專題與社團專案。</p>
+
+          <ul class="info-list">
+            <li><strong>學校：</strong>高雄科技大學（第一校區）</li>
+            <li><strong>科系：</strong>資訊管理系（IM）</li>
+            <li><strong>年級：</strong>大四</li>
+            <li><strong>專長：</strong>HTML / CSS / JavaScript / SQL / Python</li>
+          </ul>
+
+          <div style="margin-top:12px">
+            <div class="section-title"><h2>技能與興趣</h2></div>
+            <div class="skills">
+              <span class="pill">Web 前端</span>
+              <span class="pill">資料庫設計</span>
+              <span class="pill">資料分析</span>
+              <span class="pill">版本控制（Git）</span>
+              <span class="pill">團隊協作</span>
+            </div>
+          </div>
+
+          <p style="margin-top:14px">想看我的作品或需要聯絡我，可以在頁尾找到聯絡方式或加我校內社群。</p>
+        </section>
+
+        <section id="campus" class="card">
+          <div class="section-title"><h2>高科校園介紹（第一校區）</h2></div>
+          <p class="quote">以下為第一校區的簡短導覽，介紹校園特色與常見活動場域，適合新生快速了解環境。</p>
+
+          <div class="campus-tiles">
+            <div class="tile">
+              <h3>校園位置與交通</h3>
+              <p>第一校區位於高雄市區附近，校園交通方便，公車與自行開車皆可抵達。周邊有生活機能（超市、餐廳、書局），對學生生活非常友善。</p>
+            </div>
+
+            <div class="tile">
+              <h3>教學設施</h3>
+              <p>校內擁有電腦教室、實驗室與多功能教室，資訊管理系也提供實務相關的硬體與軟體資源，支援課程與專題開發。</p>
+            </div>
+
+            <div class="tile">
+              <h3>圖書館與自習空間</h3>
+              <p>圖書館藏書豐富，並有安靜的自習區與小型討論室。期末考或專題時，這些空間常常會成為同學準備的重點場所。</p>
+            </div>
+
+            <div class="tile">
+              <h3>餐飲與學生生活</h3>
+              <p>校園內外的食堂、小吃攤與咖啡店選擇多元，價格友善。學生社團活躍，常有展演或講座可以參加，豐富課外生活。</p>
+            </div>
+
+            <div class="tile">
+              <h3>運動與休閒</h3>
+              <p>校園設備包含操場、體育館與健身房，學生常利用課餘時間運動或參加校隊練習，是紓壓與社交的好地方。</p>
+            </div>
+
+            <div class="tile">
+              <h3>就業與實習資源</h3>
+              <p>學校設有就業輔導中心，提供履歷諮詢、企業徵才與實習媒合。資訊管理系亦會邀請業界講者分享實務經驗。</p>
+            </div>
+          </div>
+
+          <p style="margin-top:12px">若你是新生，建議先熟悉教學大樓與圖書館的位置，把常用路線踩一遍；若你是校友，歡迎回來看看母校近年的變化！</p>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>快速聯絡</h3>
+          <p style="color:var(--muted)"><strong>姓名：</strong>康家瑀<br><strong>學校：</strong>高雄科技大學（第一校區）<br><strong>科系：</strong>資訊管理系 大四</p>
+          <a class="btn" href="#about">聯絡 / 查看詳情</a>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>常用連結</h3>
+          <ul style="padding-left:16px;color:var(--muted)">
+            <li>學校官網</li>
+            <li>系所公告</li>
+            <li>圖書館查詢系統</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © 高雄科技大學 第一校區 — 康家瑀 · 資訊管理系 大四
+    </footer>
+  </div>
+
+  <script>
+    // 平滑捲動
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        e.preventDefault();
+        const t=document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
